@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+.footer {
+  max-width: 1600px;
+  padding: 50px 0px;
+  &-header {
+    max-width: 700px;
+    &__subtittle {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+      color: #2563eb;
+    }
+    &__subtittle,
+    &__tittle {
+      font-family: 'Poppins';
+      font-weight: 600;
+    }
+    &__tittle {
+      font-size: 52px;
+      line-height: 62px;
+      letter-spacing: -2px;
+      color: #090914;
+      margin: 27px auto 38px auto;
+    }
+  }
+  &-btn {
+    max-width: 700px;
+    margin: 0px auto 73px;
+
+    &__primery,
+    &__white {
+      border-radius: 50px;
+      display: inline-block;
+      padding: 8px 20px;
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+      margin: 0px 20px;
+      transition: all 0.5s;
+    }
+    &__primery {
+      color: #ffffff;
+      background: #2563eb;
+      &:hover {
+        color: #000000;
+        background: #ffffff;
+      }
+    }
+    &__white {
+      color: #000000;
+      background: #ffffff;
+      &:hover {
+        color: #ffffff;
+        background: #2563eb;
+      }
+    }
+  }
+  &-cont {
+    max-width: 700px;
+    &-header {
+      &__tittle {
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 22px;
+        color: #475569;
+        margin-bottom: 42px;
+      }
+    }
+    &-card {
+      max-width: 660px;
+      &__logo {
+        width: 128.65px;
+        display: inline-block;
+        padding: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 461px) {
+  .footer {
+    &-header {
+      &__subtittle {
+        line-height: 25px;
+      }
+      &__tittle {
+        font-size: 42px;
+        line-height: 52px;
+        margin: 20px auto 30px auto;
+      }
+    }
+    &-btn {
+      margin: 0px auto 43px;
+
+      &__primery,
+      &__white {
+        margin: 20px 20px;
+      }
+    }
+  }
+}
